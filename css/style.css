@@ -116,13 +116,7 @@ header i {
   align-items: center;
   justify-content: center;
 }
-.separator::before {
-  content: "or";
-  color: var(--light-gery);
-  font-size: 19px;
-  padding: 0 15px;
-  border-radius: 20px;
-}
+
 .input-part button {
   color: var(--text-color);
   cursor: pointer;
