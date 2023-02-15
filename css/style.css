@@ -219,59 +219,6 @@ header i {
   font-size: 37px;
 }
 
-/* COLOR PALETTE */
-/* COLOR PICKER */
-
-.color-palette {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 12px;
-  right: 0;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 30px;
-  padding: 8px;
-  text-align: center;
-}
-
-.color-palette .theme-color {
-  background-color: red;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.color-palette .theme-color:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-/* drak mode palette */
-
-.dark-mode {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 50%;
-  padding: 8px 13px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.dark-mode span{
-  font-size: 20px;
-  cursor: pointer;
-}
-
 
 /* Media Queries */
 @media only screen and (max-width: 436px) {
@@ -280,36 +227,4 @@ header i {
     min-width: 90%;
   }
 
-  .color-palette {
-    max-width: 90%;
-    min-width: 90%;
-  }
-
-  .color-palette .theme-color {
-    width: 22px;
-    height: 22px;
-  }
-}
-
-@media only screen and (max-width: 636px) {
-  .color-palette {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    padding: 0;
-    margin: 0;
-    width: 400px;
-    margin-bottom: 16px;
-  }
-
-  .color-palette .theme-color {
-    margin-top: 10px;
-  }
-
-  .color-palette .theme-color:not(:last-child) {
-    margin-right: 10px;
-  }
 }
