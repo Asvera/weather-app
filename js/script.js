@@ -23,11 +23,6 @@ function requestApi(city) {
   fetchData();
 }
 
-function onSuccess(position) {
-  const { latitude, longitude } = position.coords; // getting lat and lon of the user device from coords obj
-  api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
-  fetchData();
-}
 
 function onError(error) {
   // if any error occur while getting user location then we'll show it in infoText
